@@ -10,7 +10,9 @@ from .forms import PostForm
 
 from django.contrib.auth.decorators import login_required
 
-# Create your views here.
+
+
+
 
 class PostList(ListView):
     model = Post

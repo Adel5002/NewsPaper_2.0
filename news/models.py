@@ -66,7 +66,7 @@ class Post(models.Model):
         self.save()
 
     def preview(self):
-        return self.text[0:123] + '...'
+        return self.text[0:255] + '...'
 
     def __str__(self):
         return f'{self.title.title()}: {self.text[:20]}'
